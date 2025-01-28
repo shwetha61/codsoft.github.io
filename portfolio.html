@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Name - Portfolio</title>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.1;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    background-color: #fff;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+#about .bio {
+    max-width: 600px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #e3e3e3;
+    padding: 40px 20px;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#skills ul {
+    list-style: circle;
+    text-align: center;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 1.2rem;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #fff;
+    padding: 10px 10px;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#projects .project {
+    display: inline-block;
+    width: 40%;
+    margin:  30px 40px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#projects .project img {
+    width: 50%;
+    height: 10rem;
+    border-radius: 8px;
+}
+
+#projects .project h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+/* Resume Section */
+#resume {
+    background-color: #e3e3e3;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#resume a {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+}
+
+#resume a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+#phone:hover{
+     color: aqua;
+     cursor: pointer;
+}
+
+#twit:hover{
+     color: red;
+     cursor: pointer;
+}
+
+#faceb:hover{
+     color: rgb(68, 163, 246);
+     cursor: pointer;
+}
+
+#insta:hover{
+     color: rgb(188, 4, 78);
+     cursor: pointer;
+}
+.container icon :after{
+    content: "";
+   
+    width: 0;
+    height: 6px;
+    background: red;
+    transition: 0.5s;
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+
+}
+
+.container icon:hover:after{
+    width: 100%;
+}
+
+.cont ul li:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+</style>
+</head>
+
+<body>
+    
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>SHWETHA</h1>
+            <p class="tagline">Web Developer | Designer | Problem Solver</p>
+        </div>
+
+       <div class="cont" style="position: relative; margin-left: 75rem;">
+        <ul style="list-style: none; display: flex;">
+            <li  onmouseover="slideMove()" id="slideBox">About</li>
+            <li style="margin-left: 15px;">Skills</li>
+            <li style="margin-left: 15px;">Projects</li>
+            <li style="margin-left: 15px;">Resume</li>
+            <li style="margin-left: 15px;">Contact</li>
+        </ul>
+       </div>
+    </header>
+
+
+    <script>
+        function slideMove() {
+    var section = document.getElementById("section");
+ section.style.transform = "translatey(500px)"; // Move the box 200px to the right
+}
+    </script>
+
+<div id="section">
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <img src="lady1.jpg" alt="Your Photo" class="profile-img">
+            <div class="bio">
+                <h2>Shwetha<br>Fullstack Developer </h2>
+                <p>I'm a passionate web developer with a strong background in front-end technologies like HTML, CSS, and JavaScript. I enjoy turning complex problems into simple and intuitive designs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="flip1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Flipkart is one of the largest e-commerce platforms in India,<br>providing a wide range of products, including electronics, home goods, groceries, and more. Its website serves as an online marketplace where users can browse, search, and purchase products from various categories<br>
+                    To build a website using HTML, CSS, and JavaScript, you would need to focus on key components like layout, interactivity, and responsiveness.</p>
+            </div>
+            <div class="project">
+                <img src="school7.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Creating a SouthKent School website with HTML, CSS, and JavaScript involves structuring the website, styling it, and adding interactivity.<br>
+                    I will create a homepage with a header, navigation menu, a welcome section, and a footer. The website will be mobile-responsive, and JavaScript will be used for interactive features such as a hamburger menu toggle.<br>
+                   
+            </div>
+        </div>
+    
+</section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p><a href="resume.pdf" download>Download My Resume</a></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: kattimanishwetha4@gmail.com</p>
+            <p>Phone: 6361624154</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            
+            <p>&copy; 2025 Shwetha. All rights reserved.</p>
+            <div class="icon" style="word-spacing: 15px; margin-top: 15px;">
+               <i id="phone" class="fa-solid fa-phone-volume"></i>
+               <i id="twit" class="fa-brands fa-twitter"></i>
+               <i id="faceb" class="fa-brands fa-facebook"></i>
+               <i id="insta" class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
