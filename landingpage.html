@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   
+
+    <style>
+  /* Basic Reset */
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+ font-family: Arial, sans-serif;
+ line-height: 1.6;
+ background-color: #f4f4f4;
+}
+
+.navbar1{
+ background-color: rgb(8, 91, 164);
+ padding: 10px 80px 10px;
+ display: flex;
+}
+
+.icone1{
+  color: white;
+ font-size: 20px;
+  word-spacing: 20px;
+  margin-left: 100px;
+}
+
+.navbar-nav1 {
+ display: inline;
+ margin-left: 30rem;
+}
+
+li{
+  display: inline;
+  list-style: none;
+  text-align: right;
+}
+
+.navbar-nav1 a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+input{
+  border-radius: 8px;
+  height: 35px;
+  text-align: center;
+}
+
+.navbar-nav1:hover >:not(:hover){
+  filter: blur(1.5px);
+  opacity: 0.5;
+}
+
+
+
+
+
+.navbar2{
+ background-color:white;
+ padding: 7px 300px 7px;
+ display: flex;
+}
+.navbar2 img{
+  width: 50px;
+}
+.land{
+  position: relative;
+  bottom: 15px;
+  font-size: 18px;
+  font-weight: 20px;
+  font: bold;
+}
+
+
+.container-fluid2{
+  text-align: right;
+  margin-left: 14rem;
+  margin-top: 10px;
+  word-spacing: 45px;
+}
+
+
+/* Header Styling */
+header {
+  background: url(https://media.istockphoto.com/id/1720565768/photo/two-business-people-using-a-laptop-together-in-an-office.jpg?s=612x612&w=0&k=20&c=pazx22qMyGVNKmmNyLleJ6BEiD8Do_CGhb3F0_KiB7c=);
+  background-repeat: no-repeat;
+  height: 600px;
+  color: black;
+  background-size: cover;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.header-container {
+  margin-top: 350px;
+}
+.header-container h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  
+}
+
+.header-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+
+/* Main Content Section */
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.feature-box {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.feature-box h2 {
+  font-size: 1.8em;
+  color: #333;
+}
+
+.feature-box p {
+  font-size: 1em;
+  color: #666;
+}
+
+.about{
+  text-align: center;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+/* Mobile Responsiveness (screens 768px and below) */
+@media (max-width: 768px) {
+            /* Navbar adjustments */
+            .navbar1 {
+                padding: 10px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar-nav1 {
+                margin-left: 0;
+                text-align: center;
+                display: block;
+            }
+
+            .navbar-nav1 li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .navbar-nav1 a {
+                padding: 8px;
+            }
+
+            .search-box {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            /* Adjust navbar2 elements */
+            .navbar2 {
+                padding: 7px 20px;
+            }
+
+            .container-fluid2 {
+                text-align: center;
+                margin: 0;
+            }
+
+            /* Header text adjustments */
+            header {
+                padding: 20px;
+                background-size: cover;
+                height: auto;
+            }
+
+            .header-container h1 {
+                font-size: 2em;
+            }
+
+            .header-container p {
+                font-size: 1em;
+            }
+
+            .cta-button {
+                padding: 8px 16px;
+            }
+
+            /* Features section - stack boxes vertically */
+            .features {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .feature-box {
+                margin: 10px 0;
+                width: 100%;
+            }
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar1">
+      <span class="icone1">
+        <i class="fa-brands fa-twitter" ></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-facebook-messenger"></i>
+      </span>
+      
+        <span class="container-fluid1">
+          
+          
+            <ul class="navbar-nav1">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"> About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Page</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Services</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Bieg</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Salad</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Contact</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Buy Now</a>
+              </li>
+              <span> <input class="search-box" type="search" placeholder="Search" aria-label="Search"></span>
+             
+            </ul>
+        </span>
+      
+      </nav>
+
+
+
+
+      <nav class="navbar2">
+        <span class="icone">
+          <img class="img" src="landing1.jpg" alt="">
+          <span class="land">LANDING PAGE</span>
+        </span>
+        
+          <span class="container-fluid2">
+            <i class="fa-solid fa-phone">+12-345-7890</i>
+            <i class="fa-solid fa-envelope"></i><span>abcdeland123@gmail.com</span>
+            <span> <input class="search-box" type="search" placeholder="Search" aria-label="Search"></span>
+               
+          </span>
+        
+        </nav>
+
+    <!-- Header Section -->
+    <header>
+      <div class="header-container">
+        <h4>WE ARE CREATIVE</h4>
+        <h1>CREATIVE DIGITAL AGENCY</h1>
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos tempore rerum ducimus amet <br>praesentium voluptate veniam deleniti architecto, adipisci fuga?</h3>
+        <button class="cta-button">Get Started</button>
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="features">
+        <div class="feature-box">
+          <h2>LAUNCH BUSINESS</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Veniam, tempore?</p>
+        </div>
+        <div class="feature-box">
+          <h2>ONLINE SUPPORT TEAM</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Eligendi, nulla.</p>
+        </div>
+        <div class="feature-box">
+          <h2>TIME MANAGEMENT</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Fuga, dolorum.</p>
+        </div>
+    </section>
+
+    <!---About section--->
+      <div class="about">
+        <h1>ABOUT US</h1>
+        <h3>10 years, we passionate about achieving better results for <br>our clients</h3>
+      </div> 
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 Company Name. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+  
